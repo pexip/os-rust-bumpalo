@@ -1,0 +1,44 @@
+Source: rust-bumpalo
+Section: rust
+Priority: optional
+Build-Depends: debhelper (>= 12),
+ dh-cargo (>= 24),
+ cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Wolfgang Silbermayr <wolfgang@silbermayr.at>
+Standards-Version: 4.5.1
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/bumpalo]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/bumpalo
+Rules-Requires-Root: no
+
+Package: librust-bumpalo-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-bumpalo+allocator-api-dev (= ${binary:Version}),
+ librust-bumpalo+boxed-dev (= ${binary:Version}),
+ librust-bumpalo+collections-dev (= ${binary:Version}),
+ librust-bumpalo+default-dev (= ${binary:Version}),
+ librust-bumpalo-3-dev (= ${binary:Version}),
+ librust-bumpalo-3+allocator-api-dev (= ${binary:Version}),
+ librust-bumpalo-3+boxed-dev (= ${binary:Version}),
+ librust-bumpalo-3+collections-dev (= ${binary:Version}),
+ librust-bumpalo-3+default-dev (= ${binary:Version}),
+ librust-bumpalo-3.7-dev (= ${binary:Version}),
+ librust-bumpalo-3.7+allocator-api-dev (= ${binary:Version}),
+ librust-bumpalo-3.7+boxed-dev (= ${binary:Version}),
+ librust-bumpalo-3.7+collections-dev (= ${binary:Version}),
+ librust-bumpalo-3.7+default-dev (= ${binary:Version}),
+ librust-bumpalo-3.7.0-dev (= ${binary:Version}),
+ librust-bumpalo-3.7.0+allocator-api-dev (= ${binary:Version}),
+ librust-bumpalo-3.7.0+boxed-dev (= ${binary:Version}),
+ librust-bumpalo-3.7.0+collections-dev (= ${binary:Version}),
+ librust-bumpalo-3.7.0+default-dev (= ${binary:Version})
+Description: Fast bump allocation arena for Rust - Rust source code
+ This package contains the source for the Rust bumpalo crate, packaged by
+ debcargo for use with cargo and dh-cargo.
