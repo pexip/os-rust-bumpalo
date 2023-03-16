@@ -1,29 +1,29 @@
-Test-Command: /usr/share/cargo/bin/cargo-auto-test bumpalo 3.7.0 --all-targets --all-features
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bumpalo 3.12.0 --all-targets --all-features
 Features: test-name=rust-bumpalo:@
-Depends: dh-cargo (>= 18), librust-quickcheck-0.9+default-dev, librust-rand-0.7+default-dev, @
+Depends: dh-cargo (>= 18), librust-quickcheck-1+default-dev (>= 1.0.3-~~), librust-rand-0.8+default-dev (>= 0.8.5-~~), @
 Restrictions: allow-stderr, skip-not-installable, flaky
 
-Test-Command: /usr/share/cargo/bin/cargo-auto-test bumpalo 3.7.0 --all-targets --no-default-features --features allocator_api
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bumpalo 3.12.0 --all-targets --no-default-features --features allocator_api
 Features: test-name=librust-bumpalo-dev:allocator_api
-Depends: dh-cargo (>= 18), librust-quickcheck-0.9+default-dev, librust-rand-0.7+default-dev, @
+Depends: dh-cargo (>= 18), librust-quickcheck-1+default-dev (>= 1.0.3-~~), librust-rand-0.8+default-dev (>= 0.8.5-~~), @
 Restrictions: allow-stderr, skip-not-installable, flaky
 
-Test-Command: /usr/share/cargo/bin/cargo-auto-test bumpalo 3.7.0 --all-targets --no-default-features --features boxed
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bumpalo 3.12.0 --all-targets --no-default-features --features boxed
 Features: test-name=librust-bumpalo-dev:boxed
-Depends: dh-cargo (>= 18), librust-quickcheck-0.9+default-dev, librust-rand-0.7+default-dev, @
+Depends: dh-cargo (>= 18), librust-quickcheck-1+default-dev (>= 1.0.3-~~), librust-rand-0.8+default-dev (>= 0.8.5-~~), @
 Restrictions: allow-stderr, skip-not-installable
 
-Test-Command: /usr/share/cargo/bin/cargo-auto-test bumpalo 3.7.0 --all-targets --no-default-features --features collections
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bumpalo 3.12.0 --all-targets --no-default-features --features collections
 Features: test-name=librust-bumpalo-dev:collections
-Depends: dh-cargo (>= 18), librust-quickcheck-0.9+default-dev, librust-rand-0.7+default-dev, @
+Depends: dh-cargo (>= 18), librust-quickcheck-1+default-dev (>= 1.0.3-~~), librust-rand-0.8+default-dev (>= 0.8.5-~~), @
 Restrictions: allow-stderr, skip-not-installable
 
-Test-Command: /usr/share/cargo/bin/cargo-auto-test bumpalo 3.7.0 --all-targets 
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bumpalo 3.12.0 --all-targets
 Features: test-name=librust-bumpalo-dev:default
-Depends: dh-cargo (>= 18), librust-quickcheck-0.9+default-dev, librust-rand-0.7+default-dev, @
+Depends: dh-cargo (>= 18), librust-quickcheck-1+default-dev (>= 1.0.3-~~), librust-rand-0.8+default-dev (>= 0.8.5-~~), @
 Restrictions: allow-stderr, skip-not-installable
 
-Test-Command: /usr/share/cargo/bin/cargo-auto-test bumpalo 3.7.0 --all-targets --no-default-features
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bumpalo 3.12.0 --all-targets --no-default-features
 Features: test-name=librust-bumpalo-dev:
-Depends: dh-cargo (>= 18), librust-quickcheck-0.9+default-dev, librust-rand-0.7+default-dev, @
+Depends: dh-cargo (>= 18), librust-quickcheck-1+default-dev (>= 1.0.3-~~), librust-rand-0.8+default-dev (>= 0.8.5-~~), @
 Restrictions: allow-stderr, skip-not-installable
